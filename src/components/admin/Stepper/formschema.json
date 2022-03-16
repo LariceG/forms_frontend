@@ -1,0 +1,43 @@
+[
+    {
+        "sectionTitle": "User info",
+        "containerClass": "user-section",
+        "displaySection": true,
+        "displaySectionTitle": true,
+        "fields": [
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Name",
+                "id": "",
+                "placeholder": "",
+                "inputClass": "",
+                "containerClass": "",
+                "validations": [
+                    {
+                        "type": "required",
+                        "applyWhen": [],
+                        "applyWhenRelation": "OR"
+                    }
+                ],
+                "errorMessage": { 
+                  "messages": {
+                    "default": "First name and last name must be required."
+                  }
+                },
+                "displayWhen": {
+                    "conditions": [
+                        {
+                            "name": "gender",
+                            "value": "female",
+                            "condition": "=="
+                        }
+                    ],
+                    "displayWhenRelation": "AND"
+                },
+                "disabled": false,
+                "allowedUsers": []
+            }
+        ]
+    }
+]

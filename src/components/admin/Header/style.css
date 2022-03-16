@@ -1,0 +1,68 @@
+header .navbar {
+    width: 100%;
+    padding: 15px;
+}
+.navbar-dark .navbar-brand {
+    padding-top: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255) ;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+.user-profile>span {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    background: #fff;
+    color: #343a40;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+}
+
+/* Userside */
+.userside{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 400px;
+    z-index: 999999;
+    min-height: 100vh;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0px 5px 15px 0px rgb(68 68 68 / 10%);
+    border-radius: 5px 0 0 5px;
+    transform: translateX(400px);
+    transition: 0.5s all ease;
+}
+.userside.open{
+    display: block;
+    transform: translateX(0px);
+}
+#backDrop{
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99999;
+}
+#backDrop.active{
+    display: block;
+}
+#closeSide {
+    color: #888;
+    text-shadow: 0 0 #888;
+}
+#closeSide:hover {
+    color: #fe3e57;
+}
+.userside .userside-body {
+    padding: 20px;
+}

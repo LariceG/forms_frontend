@@ -1,0 +1,57 @@
+.breadcrumb-item a {
+    color: #343a40;
+}
+.preview-form > h2 {
+    display: none;
+}
+.preview-form-header {
+    margin-bottom: 15px;
+}
+.steps-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.steps-wrapper .step {
+    flex-grow: 1;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.steps-wrapper .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dashed #999;
+    left: 50%;
+    top: 15px;
+    z-index: 0;
+}
+.steps-wrapper .step .step-count {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background: #d9e8f9;
+    color: #007bfe;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+.steps-wrapper .step .step-title {
+    font-weight: 600;
+    color: #343a40;
+}
+.steps-wrapper .step:not(.active) {
+    filter: grayscale(1);
+}
+.steps-wrapper .step:not(.active) .step-title {
+    opacity: 0.8;
+}

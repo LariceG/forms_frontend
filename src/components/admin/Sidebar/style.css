@@ -1,0 +1,23 @@
+.sidebar-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    clear: both;
+    background-color: #fff;
+    min-height: calc(100vh - 78px);
+}
+.sidebar-content .nav-item:first-child{
+    padding: 15px;
+}
+.sidebar-content .nav-item:first-child h6{
+    margin: 0;
+}
+.sidebar-content .nav-item .nav-link{
+    color: #121127;
+}
+.sidebar-content .nav-item .nav-link:hover, .sidebar-content .nav-item .nav-link.active {
+    color: #fe3e57;
+}
+.sidebar-wrapper .sidebar-content {
+    padding: 20px;
+}

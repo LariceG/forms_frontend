@@ -1,0 +1,13 @@
+.formBuilderHeader {
+    margin-bottom: 15px;
+}
+.formBuilderHeader  .nav-pills .nav-link {
+    color: #343a40;
+}
+.formBuilderHeader  .nav-pills .nav-link.active {
+    color: #ffffff;
+}
+.formBuilderHeader  .nav {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
